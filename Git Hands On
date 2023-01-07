@@ -1,0 +1,31 @@
+Git Hands On
+1- Install Git on your computer. See the instructions I provided earlier for information on how to install Git on different operating systems.
+2- Set your Git configuration options using the git config command. You might want to set your username and email address, which are used to identify you as the author of commits you make to the repository. You can use the --global flag to set configuration options that should apply to all repositories on your system. For example:
+    $ git config --global user.name "Your Name"
+    $ git config --global user.email "your.email@example.com"
+3-  Navigate to your python folder in your terminal or command prompt.
+4- Initialize a new Git repository in the project directory by running the git init command. This will create a .git directory in the project directory, which will be used to track the files in your project and store the revision history.
+    
+    $ git init
+5- Make changes to the files in your working directory. You can edit the files using a text editor or any other tool that you prefer.
+    
+6- Use the git add command to move the modified files from your working directory to the staging area. The git add command takes a snapshot of the modified file and stores it in the staging area, ready to be committed to the repository.
+    $ git add file1.txt file2.txt
+    
+7- Use the git commit command to commit the changes from the staging area to your local Git repository. When you run git commit, Git stores a new revision of the code in the repository, along with a commit message that describes the changes you have made.
+    $ git commit -m "Add new files"
+8- Use the git push command to send the committed changes to a remote repository, such as GitHub. The git push command sends the commits from your local repository to the remote repository, making the changes visible to other collaborators.
+    $ git push origin my-branch
+** Create a new branch
+1- Open a terminal or command prompt, and navigate to the root directory of your Git repository.
+2- Use the git branch command to list the existing branches in the repository. You should see the master branch listed.
+3- Use the git branch command to create a new branch. For example:
+    $ git branch my-new-branch
+This will create a new branch called my-new-branch.
+4-  Use the git branch command to list the branches again. You should see the my-new-branch branch listed along with the master branch.
+5- Use the git checkout command to switch to the new branch. For example:
+    $ git checkout my-new-branch
+6- Make some changes to the files in your working directory. For example, you might create a new file or modify an existing file.
+7- Use the git add and git commit commands to commit the changes to the my-new-branch branch    
+    $ git add <modified-file>
+    $ git commit -m "Add changes to my-
